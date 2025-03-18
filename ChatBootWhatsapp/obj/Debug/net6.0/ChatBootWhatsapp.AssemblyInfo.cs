@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChatBootWhatsapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eabec30ceeeeae7f694daed95b1d768a7e1cfb82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a5f1e7ebc6774526d1667471012d46996b48756")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChatBootWhatsapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChatBootWhatsapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

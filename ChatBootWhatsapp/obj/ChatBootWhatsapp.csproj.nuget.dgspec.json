@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\ChatBootWhatsapp\\ChatBootWhatsapp\\ChatBootWhatsapp.csproj": {}
+    "D:\\C#\\ChatBoot V2\\ChatBootWhatsapp\\ChatBootWhatsapp.csproj": {}
   },
   "projects": {
-    "D:\\C#\\ChatBootWhatsapp\\ChatBootWhatsapp\\ChatBootWhatsapp.csproj": {
+    "D:\\C#\\ChatBoot V2\\ChatBootWhatsapp\\ChatBootWhatsapp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\ChatBootWhatsapp\\ChatBootWhatsapp\\ChatBootWhatsapp.csproj",
+        "projectUniqueName": "D:\\C#\\ChatBoot V2\\ChatBootWhatsapp\\ChatBootWhatsapp.csproj",
         "projectName": "ChatBootWhatsapp",
-        "projectPath": "D:\\C#\\ChatBootWhatsapp\\ChatBootWhatsapp\\ChatBootWhatsapp.csproj",
-        "packagesPath": "C:\\Users\\Lucas Felix\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\ChatBootWhatsapp\\ChatBootWhatsapp\\obj\\",
+        "projectPath": "D:\\C#\\ChatBoot V2\\ChatBootWhatsapp\\ChatBootWhatsapp.csproj",
+        "packagesPath": "C:\\Users\\Luuca\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\ChatBoot V2\\ChatBootWhatsapp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Lucas Felix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luuca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -53,6 +54,10 @@
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.4.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Rivescript.CSharp": {
               "target": "Package",
@@ -82,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

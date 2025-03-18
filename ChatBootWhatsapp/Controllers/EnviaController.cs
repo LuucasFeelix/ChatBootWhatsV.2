@@ -11,13 +11,13 @@ namespace ChatBootWhatsapp.Controllers
 
         public async Task enviaAsync()
         {
-            string token = "EAAPkLZBJSP9kBO8mnlsiJ4C51mMbeykKa9frNRmq7LAfkraWR2gVAy3AE7uO5fOtSSaRtblN6ZCDA9ZChAaFZAyZAoOERiJ3GF8d5z54gyNcAxvu6B6GnnVSltzKBiBZBlL4JFy6p5kOfW0nBaDr9eSg86o9LWNk40zvRBZCQgcxLouwpJLIq87hFFlrGneBNdlrQZDZD";
+            string token = "EAAPkLZBJSP9kBO0hNnZBclNwBe2RmHH4Vd2djukHXV8ZCDEb8lywZAPxefhQ3qCeppGZAz8bfsu6siLXQZCeXlolwvjwYLPojd3f9cM2rOZAOazmHF4z4tzevcVaxb0zO4FNZBbAZBgdAOyvVkLEZCghDZBkYjKFxXZBDQ4QEiWNYPRZAhsAk8ZBeV2FbaKQnloXwBhcTA0PM26VG5ZCEsIYZBUZAq0iO2ShzqzwZD";
 
             string idTelefone = "502112759653572";
 
             string telefone = "5516993837839";
             HttpClient client = new HttpClient();
-            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://graph.facebook.com/v21.0/" + idTelefone + "/messages");
+            HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://graph.facebook.com/v22.0/" + idTelefone + "/messages");
             request.Headers.Add("Authorization", "Bearer " + token);
             request.Content = new StringContent("{\"messaging_product\": \"whatsapp\",\"recipient_type\": \"individual\",\"to\": \"" + telefone + "\",\"type\": \"text\",\"text\": {\"body\": \"Esta Funcionando\"}}");
             request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");

@@ -40,3 +40,46 @@ D:\C#\ChatBootWhatsapp\ChatBootWhatsapp\bin\Debug\net6.0\Microsoft.Extensions.Lo
 D:\C#\ChatBootWhatsapp\ChatBootWhatsapp\bin\Debug\net6.0\MySqlConnector.dll
 D:\C#\ChatBootWhatsapp\ChatBootWhatsapp\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 D:\C#\ChatBootWhatsapp\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\appsettings.Development.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\appsettings.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\ChatBootWhatsapp.staticwebassets.endpoints.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\ChatBootWhatsapp.exe
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\ChatBootWhatsapp.deps.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\ChatBootWhatsapp.runtimeconfig.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\ChatBootWhatsapp.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\ChatBootWhatsapp.pdb
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\MySqlConnector.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\RiveScript.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.csproj.AssemblyReference.cache
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.AssemblyInfoInputs.cache
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.AssemblyInfo.cs
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.csproj.CoreCompileInputs.cache
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.MvcApplicationPartsAssemblyInfo.cs
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.MvcApplicationPartsAssemblyInfo.cache
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.sourcelink.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\scopedcss\bundle\ChatBootWhatsapp.styles.css
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets.build.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets.development.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets\msbuild.ChatBootWhatsapp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets\msbuild.ChatBootWhatsapp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets\msbuild.build.ChatBootWhatsapp.props
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ChatBootWhatsapp.props
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ChatBootWhatsapp.props
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets.pack.json
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBoot.3C2F41F5.Up2Date
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\refint\ChatBootWhatsapp.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.pdb
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ChatBootWhatsapp.genruntimeconfig.cache
+D:\C#\ChatBoot V2\ChatBootWhatsapp\obj\Debug\net6.0\ref\ChatBootWhatsapp.dll
+D:\C#\ChatBoot V2\ChatBootWhatsapp\bin\Debug\net6.0\Newtonsoft.Json.dll

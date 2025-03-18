@@ -101,6 +101,24 @@
   },
   "components": {
     "schemas": {
+      "ButtonReply": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "text": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Change": {
         "type": "object",
         "properties": {
@@ -123,6 +141,32 @@
         },
         "additionalProperties": false
       },
+      "Interactive": {
+        "type": "object",
+        "properties": {
+          "button_reply": {
+            "$ref": "#/components/schemas/ButtonReply"
+          },
+          "list_reply": {
+            "$ref": "#/components/schemas/ListReply"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ListReply": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Messages": {
         "type": "object",
         "properties": {
@@ -136,6 +180,12 @@
           },
           "text": {
             "$ref": "#/components/schemas/Text"
+          },
+          "button": {
+            "$ref": "#/components/schemas/ButtonReply"
+          },
+          "interactive": {
+            "$ref": "#/components/schemas/Interactive"
           }
         },
         "additionalProperties": false
