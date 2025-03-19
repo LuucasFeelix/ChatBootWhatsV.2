@@ -40,11 +40,9 @@ namespace ChatBootWhatsapp.Controllers
             telefone = FormatarNumero(telefone);
             mensagem = mensagem.Replace("\r\n", "\\n").Replace("\n", "\\n");
 
-            // Cria os botões de resposta rápida
             var botoesJson = botoes.Select(botao => $"{{\"type\": \"reply\", \"reply\": {{\"id\": \"{botao.id}\", \"title\": \"{botao.titulo}\"}}}}").ToList();
             var botoesJsonString = string.Join(",", botoesJson);
 
-            // Monta o JSON para os botões de resposta rápida
             var json = $@"{{
         ""messaging_product"": ""whatsapp"",
         ""recipient_type"": ""individual"",
@@ -61,8 +59,6 @@ namespace ChatBootWhatsapp.Controllers
         }}
     }}";
 
-            Console.WriteLine($"JSON enviado: {json}"); // Log do JSON
-
             var request = new HttpRequestMessage(HttpMethod.Post, $"https://graph.facebook.com/v22.0/{_idTelefone}/messages")
             {
                 Content = new StringContent(json, Encoding.UTF8, "application/json")
@@ -70,13 +66,6 @@ namespace ChatBootWhatsapp.Controllers
             request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", _token);
 
             HttpResponseMessage response = await _httpClient.SendAsync(request);
-
-            if (!response.IsSuccessStatusCode)
-            {
-                var error = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"Erro ao enviar mensagem: {error}"); // Log do erro
-            }
-
             return response.IsSuccessStatusCode;
         }
 

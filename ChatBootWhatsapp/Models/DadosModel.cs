@@ -3,21 +3,26 @@
     using MySqlConnector;
     public class DadosModel
     {
-        public void insert(string mensagem_recebida, string mensagem_enviada, string id_whatsapp, string telefone_whatsapp, string resposta_whatsapp)
+        public void Insert(string mensagem_recebida, string mensagem_enviada, string id_whatsapp, string telefone_whatsapp, string resposta_whatsapp)
         {
             var connection = new MySqlConnection("Server=localhost;User ID=root;Password=;Database=ChatBootV2");
             try
             {
                 var command = connection.CreateCommand();
                 command.CommandText = "INSERT INTO `registros` " +
-                    "(`mensagem_recebida`        ,`mensagem_enviada`        ,`id_whatsapp`         , `telefone_whatsapp`        , `resposta_whatsapp`) VALUES " +
-                    "('" + mensagem_recebida + "','" + mensagem_enviada + "', '" + id_whatsapp + "', '" + telefone_whatsapp + "', '" + resposta_whatsapp + "');";
+                    "(`mensagem_recebida`, `mensagem_enviada`, `id_whatsapp`, `telefone_whatsapp`, `resposta_whatsapp`) VALUES " +
+                    "(@mensagem_recebida, @mensagem_enviada, @id_whatsapp, @telefone_whatsapp, @resposta_whatsapp);";
+                command.Parameters.AddWithValue("@mensagem_recebida", mensagem_recebida);
+                command.Parameters.AddWithValue("@mensagem_enviada", mensagem_enviada);
+                command.Parameters.AddWithValue("@id_whatsapp", id_whatsapp);
+                command.Parameters.AddWithValue("@telefone_whatsapp", telefone_whatsapp);
+                command.Parameters.AddWithValue("@resposta_whatsapp", resposta_whatsapp);
                 connection.Open();
                 command.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao salvar dados: {ex.Message}");
+                // Aqui você pode adicionar logging ou tratamento de exceção
             }
             finally
             {

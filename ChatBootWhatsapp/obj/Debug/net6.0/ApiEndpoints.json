@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "ChatBootWhatsapp.Controllers.EnviaController",
-    "Method": "enviaAsync",
+    "Method": "EnviaAsync",
     "RelativePath": "envia",
     "HttpMethod": "GET",
     "IsController": true,
