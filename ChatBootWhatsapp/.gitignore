@@ -1,0 +1,77 @@
+﻿## Arquivos do Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.iml
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Bb]uild/
+bld/
+[Bb]in/
+[Oo]bj/
+publish/
+
+## Arquivos do NuGet
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nupkg
+.nuget/
+
+## Logs e diagnósticos
+[Ll]og/
+[Ll]ogs/
+*.log
+*.csv
+*.testlog
+*.coverage
+*.coveragexml
+[Bb]uild[Ll]og.*
+[Tt]est[Rr]esult*/
+
+## Configurações sensíveis
+appsettings.Development.json
+*.secret
+.env
+.env.local
+
+## Banco de dados
+*.mdf
+*.ldf
+*.ndf
+
+## Editores/IDEs
+.idea/
+.vscode/
+*.code-workspace
+
+## Docker
+docker-compose*
+Dockerfile*
+*/docker-compose*
+*/Dockerfile*
+
+## ASP.NET Core
+appsettings.*.json
+launchSettings.json
+
+## Node.js (se aplicável)
+node_modules/
+package-lock.json
+
+## Outros
+func.exe
+*.cache
+*.publishsettings
+*.backup
+*.orig
+*.tmp
+
+## Azure Functions
+local.settings.json

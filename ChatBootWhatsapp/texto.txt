@@ -1,0 +1,4 @@
+mensagem_recebida = hola
+id_whatsapp = wamid.HBgNNTUxNjk5MzgzNzgzORUCABIYIDdCOTI4MThBQTQ4RjlGRjVDNTE2OTgzMUQ5NUMyRUZCAA==
+telefone_whatsapp = 5516993837839
+resposta = Desculpe, não entendi sua mensagem. Por favor, escolha uma das opções: 1, 2 ou 3.
