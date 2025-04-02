@@ -69,7 +69,6 @@ namespace ChatBootWhatsapp.Controllers
                 var messages = entry?.entry?.FirstOrDefault()?.changes?.FirstOrDefault()?.value?.messages;
                 if (messages == null || !messages.Any())
                 {
-                    _logger.LogInformation("Nenhuma mensagem encontrada no webhook");
                     return new { status = "Sucesso", mensagem = "Evento ignorado." };
                 }
 
@@ -80,19 +79,14 @@ namespace ChatBootWhatsapp.Controllers
                                       ?? msg?.interactive?.list_reply?.id
                                       ?? msg?.button?.text;
 
-                _logger.LogInformation($"Mensagem recebida de {telefoneWhatsapp}: {mensagemRecebida ?? idBotaoClicado}");
-
-                // Armazena a mensagem recebida em cache
                 if (!string.IsNullOrEmpty(mensagemRecebida))
                 {
                     var cacheKey = $"Mensagens_{telefoneWhatsapp}_{DateTime.Today:yyyyMMdd}";
                     var mensagensDoDia = _cache.Get<List<string>>(cacheKey) ?? new List<string>();
                     mensagensDoDia.Add(mensagemRecebida);
                     _cache.Set(cacheKey, mensagensDoDia, TimeSpan.FromHours(24));
-                    _logger.LogInformation($"Mensagem armazenada em cache para {telefoneWhatsapp}");
                 }
 
-                // Se for clique em botão
                 if (!string.IsNullOrEmpty(idBotaoClicado))
                 {
                     string resposta = ObterRespostaPorBotao(idBotaoClicado);
@@ -106,12 +100,10 @@ namespace ChatBootWhatsapp.Controllers
                     return new { status = "Erro", mensagem = "Falha ao enviar resposta." };
                 }
 
-                // Verificação de pedido confirmado
                 bool pedidoConfirmado = await VerificarPedidoConfirmadoCache(telefoneWhatsapp);
 
                 if (pedidoConfirmado)
                 {
-                    _logger.LogInformation($"Pedido confirmado encontrado para {telefoneWhatsapp}");
 
                     string mensagemContato = "📞 Seu pedido já está em preparo! Para qualquer urgência ou duvida, entre em contato pelos telefones:\n" +
                                            "(16) 3663-3366 \n(16) 3763-3366 \n(16) 99261-8003";
@@ -126,7 +118,6 @@ namespace ChatBootWhatsapp.Controllers
                     return new { status = "Erro", mensagem = "Falha ao enviar mensagem de contato." };
                 }
 
-                // Fluxo normal - Menu de opções
                 var botoes = new List<(string id, string titulo)>
                 {
                     ("1", "📋 Link Cardápio"),
@@ -149,7 +140,6 @@ namespace ChatBootWhatsapp.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Erro ao processar mensagem");
                 return new { status = "Erro", mensagem = "Erro interno no servidor." };
             }
         }
@@ -161,16 +151,13 @@ namespace ChatBootWhatsapp.Controllers
                 var cacheKey = $"Mensagens_{telefone}_{DateTime.Today:yyyyMMdd}";
                 if (!_cache.TryGetValue(cacheKey, out List<string> mensagensDoDia) || mensagensDoDia == null)
                 {
-                    _logger.LogInformation($"Nenhuma mensagem em cache para {telefone}");
                     return false;
                 }
 
                 foreach (var mensagem in mensagensDoDia)
                 {
-                    // Remove emoji inicial se existir
                     var texto = Regex.Replace(mensagem, @"^\p{Cs}*\p{Cs}", "").Trim();
 
-                    // Verifica combinações chave
                     if (Regex.IsMatch(texto, "(pedido|seu).*(confirmado|será preparado)", RegexOptions.IgnoreCase))
                     {
                         _logger.LogInformation($"Pedido confirmado detectado: {mensagem}");
@@ -182,7 +169,6 @@ namespace ChatBootWhatsapp.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Erro ao verificar pedido confirmado");
                 return false;
             }
         }
